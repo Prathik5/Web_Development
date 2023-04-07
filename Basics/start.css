@@ -1,0 +1,80 @@
+/*{
+    color: magenta;
+}
+*/
+body{
+    background-color: #f1faee;
+}
+button{   /*Element Selector*/
+    font-size: 20px;
+    background-color: #aa78fe;
+}
+h1,h2{
+    color: red;
+}
+#signup{     /*ID Selector*/
+    background-color: plum;
+}
+span{
+    color: gray;
+}
+.tag{       /*Class creator, we use a dot to create a class*/
+    background-color: gray;
+    color:white;
+    font-size: medium;
+}
+li a{       /*Descendent Selector , allows you to nest two selectors*/
+    color: aquamarine;
+}
+span a{
+    text-decoration: none;
+}
+.post a{
+    color: plum;
+    text-decoration: none;
+}
+footer a{
+    color: orange;
+    text-decoration: none;
+}
+input + button{
+    background-color: pink;
+}
+/*---       Adjacent Selector
+h2 + button{
+    background-color: magenta;
+    font-size: 15px;
+}
+*/
+/*footer > a {  Direct Descendent , comes into picture only if the second element is a direct descendent of the first element
+    color: olive;
+}*/
+input[type = "password"]{
+    color: yellow;
+}
+
+
+.post button:hover{
+    background-color: lavender;
+    color: darkcyan;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button:active{
+    background-color: #123451;
+}
+.post:nth-of-type(2n){
+    background-color: paleturquoise;
+}
+h2::first-letter{
+    font-size: 50px;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: #fcbf49;
+}

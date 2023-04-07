@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+span{
+    background-color: palevioletred;
+    border: 1px solid black;
+    width: 20em;
+    padding: 60px;
+    margin: 50px;
+    display: inline-block;
+    font-size: 3em;
+}
+h1{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    padding: 30px;
+    margin: 20px;
+    font-size: 40px;
+    line-height: 200%;
+}
+a{
+    color: yellow;
+    background-color: red;
+    width: 2em;
+    display: inline;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: olive;
+    display: inline-block;
+    border: 8px solid black;
+    margin: 50px;
+}
+/*h2{
+    font-size: 5em;
+    
+    margin-left: 1em;
+}*/
+
+button{
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: aqua;
+    color: rebeccapurple;
+}
+ul{
+    font-size: 1.5em;
+}
+
+#rem h2{
+    font-size: 10rem;
+}

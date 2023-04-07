@@ -1,0 +1,15 @@
+h1{
+    background-color: #5fcffc;
+    color: white;
+}
+p{
+    color: red;
+    background-color: yellow;
+}
+button{
+    background-color: olive;
+    color: magenta;
+}
+body{
+    background-color: #9d95e9;
+}

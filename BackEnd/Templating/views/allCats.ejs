@@ -1,0 +1,13 @@
+<%- include('Partials/head') %>
+
+<body>
+  <%- include('Partials/navbar') %>
+  <div class="container">
+    <h1>All the cats here!</h1>
+    <ul>
+      <% for (let cati of cats) { %>
+      <li><%= cati %></li>
+      <% } %>
+    </ul>
+  </div>
+</body>

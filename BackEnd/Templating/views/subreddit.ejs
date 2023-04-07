@@ -1,0 +1,36 @@
+<%- include('Partials/head') %>
+<style>
+  .vin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1,
+  h2 {
+    color: blue;
+  }
+</style>
+
+<body>
+  <%- include('Partials/navbar') %>
+  <div class="container">
+    <h1>Welcome to the <%= name %></h1>
+    <h2><%= description %></h2>
+    <div><b><%= subscribers %></b> subscribers</div>
+    <hr />
+    <% for (let pos of posts) {%>
+    <article class="vin">
+      <div><%= pos.title %> -</div>
+      <div>
+        <b><%= pos.author %></b>
+      </div>
+      <div>
+        <% if (pos.img) { %>
+        <img src="pos.img" alt="" />
+        <% } %>
+      </div>
+    </article>
+    <% } %>
+  </div>
+</body>
+<%- include('Partials/footer') %>

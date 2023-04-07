@@ -1,0 +1,15 @@
+h1,h2{
+    color: olivedrab;
+}
+.post button:hover{
+    background-color: navy;
+}
+
+button:hover{
+    background-color: darkgoldenrod;
+    font-size: 30px;
+}
+
+button{
+    background-color: magenta !important;
+}

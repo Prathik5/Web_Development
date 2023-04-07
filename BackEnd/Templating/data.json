@@ -1,0 +1,62 @@
+{
+    "soccer": {
+        "name": "Soccer",
+        "subscribers": 800000,
+        "description": "The football subreddit. News, results and discussion", 
+        "posts": [
+            {
+                "title": "Marten de Roon to make pizza for more than",
+                "author": "joeextreme"
+            },
+            
+            {"title" : "Stephan Lichtsteiner has retired from professional", 
+            "author" : "odd person"
+            },
+            {
+            "title": "OFFICIAL: Dani Parejo signs for Villareal.",
+            "author": "joeextreme"
+            }
+        ]
+    },
+    "chicken" :{
+        "name": "Chickens",
+        "subscribers": 230000,
+        "description": "The Chickens Subreddit. News, results and discussion and pictures", 
+        "posts": [
+            {
+                "title" : "This is a very big chicken",
+                "author" : "69burgers",
+                "img" : "Email_dp.jpg"
+            },
+            {
+                "title" : "Nice chicken eh?!",
+                "author" : "420dealers",
+                "img" : "Batty.jpg"
+            },
+            {
+                "title" : "I ate this chicken and left no crumbs",
+                "author" : "madmaxfury",
+                "img" : "imagge.png"
+            }
+        ]
+    },
+    "MightyHarvest" :{
+        "name": "MightyHarvest",
+        "subscribers": 230007,
+        "description": "The Mighty Harvest Subreddit. All about any good or bad harvest", 
+        "posts": [
+            {
+                "title" : "First rule of harvest is telling no one about it",
+                "author" : "TylerDurden"
+            },
+            {
+                "title" : "Say My Name! Say It",
+                "author" : "Heisenberg"
+            },
+            {
+                "title" : "Shut the hell up motherfucking nigga",
+                "author" : "SamuelJackson"
+            }
+        ]
+    }
+}
