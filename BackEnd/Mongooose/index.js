@@ -17,15 +17,19 @@ const movieSchema = new mongoose.Schema({
 });
 
 const Movie = mongoose.model("Movie", movieSchema);
-const Jawan = new Movie({
-  title: "Jawan",
-  year: 2023,
-  score: 9,
-  rating: "U/A",
-});
+// const Jawan = new Movie({
+//   title: "Jawan",
+//   year: 2023,
+//   score: 9,
+//   rating: "U/A",
+// });
 
 Movie.insertMany([
   { title: "Pathan", year: 2023, score: 8, rating: "U/A" },
+  { title: "Jawan", year: 2023, score: 9, rating: "U/A" },
   { title: "Jailer", year: 2023, score: 9, rating: "U/A" },
   { title: "Batman", year: 2022, score: 9, rating: "U/A" },
-]);
+]).then((data) => {
+  console.log("It worked");
+  console.log(data);
+});
