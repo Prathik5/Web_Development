@@ -6,6 +6,8 @@ const Product = require("./models/product");
 const methodOverride = require("method-override");
 const appError = require("./appError");
 const Farm = require("./models/farm");
+const session = require("express-session");
+const flash = require("connect-flash");
 
 const categories = ["fruit", "vegetable", "dairy"];
 
@@ -15,6 +17,20 @@ async function main() {
 }
 main().catch((error) => {
   console.log("Error!!");
+});
+
+const sessionOptions = {
+  secret: "SomeSecret",
+  resave: true,
+  saveUninitialized: true,
+};
+
+app.use(session(sessionOptions));
+app.use(flash());
+
+app.use((req, res, next) => {
+  res.locals.message = req.flash("success");
+  next();
 });
 
 app.set("views", path.join(__dirname, "views"));
@@ -49,6 +65,7 @@ app.post(
   wrapAsync(async (req, res, next) => {
     const farm = new Farm(req.body);
     await farm.save();
+    req.flash("success", "Successfully created a new farm");
     res.redirect("/farms");
   })
 );
